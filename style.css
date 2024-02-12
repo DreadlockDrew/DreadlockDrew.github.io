@@ -1,0 +1,26 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #111827; /* Tailwind's gray-900 */
+    padding: 1rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.social-link {
+    display: block;
+    color: white;
+    margin: 8px auto; /* Center align the icons */
+    font-size: 24px; /* Increase icon size */
+}
+.social-link:hover {
+    color: #6366f1; /* Tailwind's indigo-500 for hover effect */
+    transform: translateX(10px); /* Move icon to the right on hover */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
